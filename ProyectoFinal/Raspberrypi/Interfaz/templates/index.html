@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAFAS INTELIGENTES</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'css/style.css')}}">
+    
+</head>
+<body>
+   <header>
+    <a href="#" class="logo">GAFAS INTELIGENTES</a>
+    <input type="checkbox" id="menu">
+    <label for="menu"><img src="{{ url_for ('static', filename = 'images/gafas.jpg')}}" alt=""></label>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Opcion 2</a></li>
+            <li><a href="#">Opcion 3 <img src="{{ url_for ('static', filename = 'images/gafas.svg')}}" alt=""></a>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Servicios <img src="{{ url_for ('static', filename = 'images/gafas.svg')}}" alt=""></a>
+                        <ul>
+                            <li><a href="#">Cámara</a></li>
+                            <li><a href="#">Fecha</a></li>
+                            <li><a href="#">Hora</a></li>
+                            <li><a href="#">Clima</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Papelería <img src="{{ url_for ('static', filename = 'images/gafas.svg')}}" alt=""></a>
+                <ul>
+                    <li><a href="#">Imagen</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+   </header>
+   
+   <div id="app" class="grid place-content-center">
+       <img class="w-64" src="https://i.blogs.es/de36c0/2022-08-01-12.18.24/1366_2000.jpg" width="500" height="500">
+   
+       <img :src="imageData">
+       
+       <div align="center" style="margin-top: 20px;">
+           <button @click="capturarFoto">Tomar Fotografía</button>
+       </div>
+   </div>
+   
+   <script src="https://unpkg.com/vue@3"></script>
+   <script src="{{ url_for ('static', filename = 'js/index.js')}}"></script>
+    
+
+</body>
+</html>
