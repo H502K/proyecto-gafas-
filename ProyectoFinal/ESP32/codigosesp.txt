@@ -1,1 +1,1 @@
-codigos de la esp : Se suben los codigos que manejan la toma de la fotogrfia, la captacion de audio, el manejo de menu com apis y la comunicación.
+codigos de la esp : Se suben los codigos que manejan la toma de la fotografía, la captacion de audio, el manejo de menu com apis y la comunicación.
